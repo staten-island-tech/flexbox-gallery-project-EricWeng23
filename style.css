@@ -1,0 +1,23 @@
+body {
+  padding: 5px;
+  margin: 5px;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: aliceblue;
+}
+
+.flex-container {
+  font-size: 30px;
+}
+
+img {
+  width: auto;
+  height: auto;
+}
+
+.child {
+  border: 5px solid #ff0000;
+  border-radius: 30px;
+  margin: auto;
+  text-align: center;
+}
