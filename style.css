@@ -1,23 +1,33 @@
-body {
+html,
+body,
+* {
   padding: 5px;
   margin: 5px;
   box-sizing: border-box;
   font-size: 62.5%;
   background-color: aliceblue;
+  font-family: "Akronim", cursive;
 }
 
-.flex-container {
-  font-size: 30px;
-}
-
-img {
-  width: auto;
-  height: auto;
-}
-
-.child {
-  border: 5px solid #ff0000;
-  border-radius: 30px;
-  margin: auto;
+.main-header {
   text-align: center;
+  margin: 0 auto;
+  border: 1rem solid #ff0;
+  border-radius: 2rem;
+  width: 20vw;
+  font-size: 5rem;
+}
+
+.flexbox {
+  font-size: 5rem;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: flex;
+}
+.digimon {
+  border: 1rem solid #ff0000;
+  box-shadow: 12px 12px 2px 1px #ff0;
+  width: 19vw;
+  height: 45vh;
 }
