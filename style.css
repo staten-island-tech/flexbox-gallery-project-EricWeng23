@@ -5,6 +5,9 @@ body,
   margin: 5px;
   box-sizing: border-box;
   font-size: 62.5%;
+}
+
+body {
   background-color: #b4ebc2;
   font-family: "Bebas Neue", cursive;
 }
@@ -24,13 +27,17 @@ body,
   flex-wrap: wrap;
   justify-content: space-between;
   display: flex;
-  flex-direction: row;
 }
+
 .digimon {
   border: 1rem solid #f12b2b;
   border-radius: 2rem;
   box-shadow: 12px 12px 3px rgb(51, 50, 50);
   width: 28%;
-  height: 28%;
   margin-bottom: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.digimon:hover {
+  transform: scale(1.1);
 }
