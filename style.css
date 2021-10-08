@@ -28,3 +28,16 @@ body {
   justify-content: space-between;
   display: flex;
 }
+
+.digimon {
+  border: 1rem solid #f12b2b;
+  border-radius: 2rem;
+  box-shadow: 12px 12px 3px rgb(51, 50, 50);
+  width: 28%;
+  margin-bottom: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.digimon:hover {
+  transform: scale(1.1);
+}
