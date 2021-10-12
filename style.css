@@ -15,6 +15,7 @@ body {
 .main-header {
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 10rem;
   border: 1rem solid #f12b2b;
   border-radius: 2rem;
   width: 20%;
@@ -34,15 +35,26 @@ body {
   border-radius: 2rem;
   box-shadow: 12px 12px 3px rgb(51, 50, 50);
   width: 28%;
-  margin-bottom: 3rem;
+  margin-bottom: 11rem;
+}
+
+.main-header:hover {
 }
 
 #row1:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.1);
+  transition: all 2s ease-in-out;
+  transform: scale(0.8) skew(-10deg) rotate(720deg) translateY(-15%)
+    translateX(15%);
 }
 
 #row2:hover {
-  transform: skew(-10deg);
-  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  transform: scale(1.1) translateY(-15%) translateX(15%);
+  transition: all 1s ease-in-out;
+}
+
+#row3:hover {
+  opacity: 0;
+  transform: rotate(360deg) scale(0.5);
+  transition: all 1.5s ease-in-out;
 }
