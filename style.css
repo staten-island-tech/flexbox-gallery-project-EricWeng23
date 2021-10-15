@@ -24,12 +24,6 @@ body {
   animation: colorRotate 6s linear 0s infinite;
 }
 
-.click {
-  font-size: 2rem;
-  border: 1rem solid #f0f;
-  text-align: left;
-}
-
 .flexbox {
   font-size: 9rem;
   text-align: center;
@@ -72,7 +66,7 @@ body {
     color: #0099ff;
   }
   50% {
-    color: #00ff00;
+    color: #f12b2b;
   }
   75% {
     color: #ff3399;
