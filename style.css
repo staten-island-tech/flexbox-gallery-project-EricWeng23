@@ -20,12 +20,31 @@ body {
   border-radius: 2rem;
   width: 20%;
   font-size: 5rem;
-  box-shadow: 10px 10px 3px rgb(51, 50, 50);
   animation: colorRotate 6s linear 0s infinite;
+  transition: all 1s ease-in-out;
+}
+
+.main-header:hover {
+  transform: scale(1.2);
+  outline: 1rem solid #000000;
+}
+
+.progress {
+  position: relative;
+  height: 5rem;
+  width: 20%;
+  border: 1rem solid #f4a261;
+  border-radius: 2rem;
+}
+.color {
+  background-color: #ffffff;
+  height: 1rem;
+  border-radius: 2rem;
+  animation: progress 4s infinite linear;
 }
 
 .flexbox {
-  font-size: 9rem;
+  font-size: 6rem;
   text-align: center;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -37,25 +56,41 @@ body {
   border-radius: 2rem;
   box-shadow: 12px 12px 3px rgb(51, 50, 50);
   width: 28%;
-  margin-bottom: 11rem;
+  margin-bottom: 6rem;
 }
 
-#row1:hover {
+.unique {
   transition: all 2s ease-in-out;
+}
+.unique:hover {
+  transform: rotate(360deg) scale(0.8);
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.row1 {
+  transition: all 3s ease-in-out;
+}
+.row1:hover {
   transform: scale(0.5) skew(-10deg) rotate(720deg) translateY(-15%)
     translateX(15%);
+  outline: 1rem solid #ffff00;
 }
 
-#row2:hover {
-  opacity: 0;
-  transform: scale(1.1) translateY(-15%) translateX(15%);
+.row2 {
   transition: all 1s ease-in-out;
 }
+.row2:hover {
+  opacity: 0;
+  transform: scale(1.1) translateY(-15%) translateX(15%);
+}
 
-#row3:hover {
+.row3 {
+  transition: all 1.5s ease-in-out;
+}
+.row3:hover {
   opacity: 0;
   transform: rotate(360deg) scale(0.5);
-  transition: all 1.5s ease-in-out;
 }
 
 @keyframes colorRotate {
@@ -66,7 +101,7 @@ body {
     color: #0099ff;
   }
   50% {
-    color: #f12b2b;
+    color: #00ff00;
   }
   75% {
     color: #ff3399;
@@ -76,39 +111,66 @@ body {
   }
 }
 
-.animation {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  position: relative;
-  animation-name: example;
-  animation-duration: 4s;
-}
-
-@keyframes example {
+@keyframes progress {
   0% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
+    width: 0%;
   }
   25% {
-    background-color: yellow;
-    left: 200px;
-    top: 0px;
+    width: 50%;
   }
   50% {
-    background-color: blue;
-    left: 200px;
-    top: 200px;
+    width: 75%;
   }
   75% {
-    background-color: green;
-    left: 0px;
-    top: 200px;
+    width: 85%;
   }
   100% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 810px) {
+  img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 810px) {
+  body {
+    background-color: #da6da3;
+  }
+  .main-header {
+    width: 60%;
+  }
+
+  .progress,
+  .digimon {
+    width: 45%;
+  }
+
+  .flexbox {
+    justify-content: space-between;
+  }
+
+  img {
+    width: 50%;
+  }
+}
+@media (max-width: 390px) {
+  body {
+    background-color: cornflowerblue;
+  }
+  .main-header,
+  .progress,
+  .digimon {
+    width: 90%;
+  }
+
+  .flexbox {
+    justify-content: center;
+  }
+
+  img {
+    width: 90%;
   }
 }
